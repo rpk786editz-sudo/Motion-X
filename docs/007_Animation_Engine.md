@@ -61,7 +61,7 @@ FinalValue --> RenderingEngine
 - Rotation
 - Opacity
 - Anchor Point
-- Mask Path
+- Mask Path (see 010_Shape_Engine.md § Masking)
 - Effect Parameters
 - Camera Properties
 - Audio Volume
@@ -135,3 +135,4 @@ Both edit the same underlying keyframe data.
 ## Revision History
 
 - 0.1.0 Initial draft
+- 
