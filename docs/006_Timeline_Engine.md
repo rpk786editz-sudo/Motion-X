@@ -1,13 +1,9 @@
 
----
-title: "006 Timeline Engine Specification"
-document_id: MX-ENG-006
-engine: Chronos
-version: 0.1.0
-status: Draft
----
-
 # 006 Timeline Engine Specification
+
+**Engine Codename:** Chronos  
+**Document Version:** 0.1.0  
+**Status:** Draft
 
 ## Purpose
 
@@ -58,6 +54,7 @@ Each layer contains:
 - Lock State
 - Animation Reference
 - Effect Stack
+- Mask Stack (see 010_Shape_Engine.md § Masking)
 
 ## Playback States
 
@@ -101,3 +98,4 @@ All edits are command-based:
 ## Revision History
 
 - 0.1.0 Initial repository version
+- 
