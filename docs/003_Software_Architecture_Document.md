@@ -1,7 +1,11 @@
-# 003 Software Architecture Document (SAD)
+---
+title: "003 Software Architecture Document (SAD)"
+document_id: MX-SAD-003
+version: 0.2.0
+status: Active
+---
 
-Version: 0.1.0
-Status: Draft
+# 003 Software Architecture Document (SAD)
 
 ## Purpose
 Define the high-level architecture of MotionX and the relationships between its major subsystems.
@@ -56,8 +60,9 @@ Android OS
 - UI Thread
 - Timeline Thread
 - Rendering Thread
+- Audio Thread (dedicated, real-time priority — sample-accurate playback and mixing, per Echo's role as authoritative sync clock, ADR-007, cannot share scheduling with non-real-time background work)
 - Export Thread
-- Background Worker Pool
+- Background Worker Pool (includes on-device AI inference, per 019_AI_Features.md)
 
 ## Storage
 
@@ -80,8 +85,13 @@ Android OS
 
 - 001_Project_Charter.md
 - 002_Product_Requirements_Document.md
-- 004_Architecture_Decision_Records.md (planned)
+- 004_Architecture_Decision_Records.md
+- 005–014_*.md (Core Engine Specifications)
+- 017_API_Specification.md (elaborates Application Services / Core Engines layer boundary)
+- 018_Testing_Strategy.md
 
 ## Revision History
 
 - v0.1.0 Initial draft
+- v0.2.0 Added Audio Thread to Threading Model (gap identified against 012_Audio_Engine.md / ADR-007); refreshed Related Documents
+- 
