@@ -26,15 +26,16 @@ motion-x/
 │   ├── 008_Effects_Engine.md          (Nebula)
 │   ├── 009_Project_Engine.md          (Atlas)
 │   ├── 010_Shape_Engine.md            (Vector)
-│   ├── 011_Text_Engine.md             (Glyph)         [pending]
-│   ├── 012_Audio_Engine.md            (Echo)           [pending]
-│   ├── 013_Camera_Engine.md           (Horizon)        [pending]
-│   ├── 014_Expression_Engine.md       (Pulse)          [pending]
+│   ├── 011_Text_Engine.md             (Glyph)
+│   ├── 012_Audio_Engine.md            (Echo)
+│   ├── 013_Camera_Engine.md           (Horizon)
+│   ├── 014_Expression_Engine.md       (Pulse)
 │   ├── 015_Roadmap.md
-│   ├── 016_UIUX_Specification.md      [pending]
-│   ├── 017_API_Specification.md       [pending]
-│   ├── 018_Testing_Strategy.md        [pending]
-│   └── 019_AI_Features.md             [pending]
+│   ├── 016_UIUX_Specification.md
+│   ├── 017_API_Specification.md
+│   ├── 018_Testing_Strategy.md
+│   ├── 019_AI_Features.md
+│   └── 020_MVP_Implementation_Checklist.md
 ├── prompts/
 ├── prototypes/
 ├── assets/
@@ -55,15 +56,16 @@ motion-x/
 | 008 | Effects Engine (Nebula) | Done |
 | 009 | Project Engine (Atlas) | Done |
 | 010 | Shape Engine (Vector) | Done |
-| 011 | Text Engine (Glyph) | Pending |
-| 012 | Audio Engine (Echo) | Pending |
-| 013 | Camera Engine (Horizon) | Pending |
-| 014 | Expression Engine (Pulse) | Pending |
+| 011 | Text Engine (Glyph) | Done |
+| 012 | Audio Engine (Echo) | Done |
+| 013 | Camera Engine (Horizon) | Done |
+| 014 | Expression Engine (Pulse) | Done |
 | 015 | Roadmap | Done |
-| 016 | UI/UX Specification | Pending |
-| 017 | API Specification | Pending |
-| 018 | Testing Strategy | Pending |
-| 019 | AI Features | Pending |
+| 016 | UI/UX Specification | Done |
+| 017 | API Specification | Done |
+| 018 | Testing Strategy | Done |
+| 019 | AI Features | Done |
+| 020 | MVP Implementation Checklist | Done |
 
 ## Numbering Convention
 
@@ -71,7 +73,12 @@ motion-x/
 - `005–014` — Core engine specifications (10 engines named in the SAD get exactly one doc each, in dependency order: rendering → timeline → animation → effects → project → shape → text → audio → camera → expressions)
 - `015` — Roadmap
 - `016–019` — Cross-cutting specs (UI/UX, API, Testing, AI Features)
+- `020+` — Execution artifacts (implementation checklists, per-phase tracking docs)
 - New engines or major subsystems get the next free number in sequence; do not reuse or insert into an existing range.
+
+## Project Status
+
+**Phase 0 (Foundation) is complete.** All 10 engines named in the Software Architecture Document have specs, and the cross-cutting docs (Roadmap, UI/UX, API, Testing, AI) are all in place. ADRs 007–012 capture the architectural decisions made while writing the engine specs (see 004_Architecture_Decision_Records.md). Next: Phase 1 (MVP) implementation, tracked in 020_MVP_Implementation_Checklist.md.
 
 ## Core Principles
 
@@ -85,4 +92,4 @@ motion-x/
 
 See `015_Roadmap.md` for phased delivery (MVP → v1.0 → v2.0 → v3.0) and current blockers (pending engine specs).
 
-Version: 0.2.0
+Version: 0.3.0
