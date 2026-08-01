@@ -107,7 +107,7 @@ Per Roadmap Phase 1 table — these belong to v1.0 or later and should be reject
 - Audio (Echo) — any audio layer support
 - Camera (Horizon) — any 3D functionality
 - Expressions (Pulse) — even basic wiggle
-- Nested compositions, motion paths, graph editor, boolean shape ops, gradients
+- Nested compositions, motion paths, graph editor, boolean shape ops, gradients, masking/track mattes (see 010_Shape_Engine.md § Masking — spec exists, but deferred to v1.0 per Roadmap)
 - Any AI feature (gated to Phase 3 per 019_AI_Features.md)
 
 If a Stage 1–6 task seems to require one of these, that's a signal the task needs re-scoping to its MVP-safe subset, not a reason to pull the dependency in early.
@@ -129,3 +129,4 @@ If a Stage 1–6 task seems to require one of these, that's a signal the task ne
 ## Revision History
 
 - 0.1.0 Initial checklist, derived from Roadmap Phase 1 scope
+- 
