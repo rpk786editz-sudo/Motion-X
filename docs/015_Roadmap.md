@@ -102,7 +102,7 @@ flowchart LR
 |---|---|
 | Nebula (Effects) | Full effect graph, GPU-first blur/color/stylize/distortion categories |
 | Apollo (Animation) | Motion paths, Value/Speed graph editor, animation cache |
-| Vector (Shape) | Boolean ops (merge/union/intersect/subtract), Trim Paths, Repeater |
+| Vector (Shape) | Boolean ops (merge/union/intersect/subtract), Trim Paths, Repeater, **Mask Stack + Track Mattes (see 010_Shape_Engine.md § Masking)** |
 | Echo (Audio) | Waveform display, volume keyframing, basic audio sync |
 | Chronos (Timeline) | Nested compositions, markers, time remapping |
 | Aurora (Rendering) | Adaptive quality on low-end devices, background export queue |
@@ -225,3 +225,4 @@ gantt
 ## Revision History
 
 - 0.1.0 Initial roadmap draft
+- 
